@@ -1,0 +1,115 @@
+#gm-head #logo a {
+  background: url(../img/loginlogo.png);
+  background-repeat: no-repeat; }
+
+#gm-login {
+  height: 480px;
+  background: url(../img/loginbg.jpg); }
+
+#gm-login .login-box-wrap {
+  width: 350px;
+  float: right;
+  margin-top: 24px;
+  position: relative;
+  background: #fff; }
+#gm-login .loginTab {
+  float: left;
+  border-bottom: 1px solid #f4f4f4;
+  width: 175px;
+  height: 54px; }
+#gm-login .loginTab a {
+  font: 500 18px "Microsoft Yahei";
+  line-height: 54px;
+  text-align: center;
+  color: #5e5e5e; }
+#gm-login .loginBox {
+  padding: 25px 11px 0 19px; }
+#gm-login .loginBox .inputs {
+  padding: 8px 10px 7px;
+  width: 268px;
+  height: 25px;
+  border: 1px solid #CCC;
+  font-family: Arial,simsun;
+  outline: 0 none;
+  color: #333;
+  font-size: 14px;
+  line-height: 21px; }
+#gm-login .loginBox .inputs:nth-child(1) {
+  margin-bottom: 10px; }
+#gm-login .subBox {
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+#gm-login .subBox #sub {
+  width: 290px;
+  height: 42px;
+  background: #ff5757;
+  font: 500 18px/41px "Microsoft Yahei";
+  color: #fff;
+  text-align: center;
+  border: 0 none;
+  outline: 0;
+  word-spacing: 3px;
+  cursor: pointer; }
+#gm-login .remember {
+  margin-top: 20px; }
+#gm-login .remember .fleft {
+  color: #A5A5A5;
+  font: 12px/1.5 Arial,simsun;
+  text-align: left;
+  padding-left: 20px; }
+#gm-login .remember .colorccc {
+  padding: 0 10px;
+  color: #ccc; }
+#gm-login .remember .fright {
+  width: 120px;
+  font: 12px/1.5 Arial,simsun;
+  text-align: left;
+  padding-right: 20px; }
+#gm-login .remember .fright a {
+  color: #A5A5A5; }
+#gm-login .remember .fright a:nth-of-type(2) {
+  color: #2875cc; }
+#gm-login .remember .fright a:nth-of-type(2):hover {
+  text-decoration: underline; }
+#gm-login .phoneLoginBtn {
+  color: #2875cc;
+  font: 12px/1.5 Arial,simsun;
+  text-align: left;
+  padding-left: 20px; }
+#gm-login .phoneLoginBtn:hover {
+  text-decoration: underline; }
+#gm-login #corp-login {
+  background-color: #fcfcfc;
+  border: 1px solid #f0f0f0;
+  padding: 9px 20px;
+  color: #a5a5a5;
+  font-size: 12px; }
+  #gm-login #corp-login .orderMore {
+    width: 19px;
+    height: 19px;
+    background: url(../img/login-bg-common.png);
+    background-repeat: no-repeat;
+    float: right;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-top: 3px; }
+  #gm-login #corp-login .more {
+    display: none; }
+  #gm-login #corp-login .active {
+    display: block; }
+  #gm-login #corp-login a {
+    display: inline-block;
+    vertical-align: middle; }
+    #gm-login #corp-login a .play_icon {
+      border-right: 1px solid #e6e6e6;
+      float: left;
+      color: #5e5e5e;
+      padding: 0 8px;
+      margin: 6px 0; }
+    #gm-login #corp-login a .play_icon:hover {
+      color: red; }
+#gm-login #telLogin {
+  display: none; }
+
+/*# sourceMappingURL=login.css.map */

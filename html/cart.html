@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车页</title>
+    <!-- <link rel="stylesheet" href="../css/mybase.css"> -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/carts.css">
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/mycommon.js"></script>
+</head>
+
+<body>
+    <!-- <div id="gmbox"> -->
+    <!-- 首页顶部 -->
+    <div id="gm-top" class=" clearfix">
+        <div class="container clearfix">
+            <ul class="fl gm-top-left clearfix">
+                <!-- <a href="###">
+                        <li>国美会员</li>
+                    </a>
+                    <a href="###">
+                        <li>登录</li>
+                    </a>
+                    <a href="###">
+                        <li>注册有礼</li>
+                    </a> -->
+            </ul>
+            <ul class="fr gm-top-right clearfix">
+                <a href="cart.html">
+                    <li>我的订单</li>
+                </a>
+                <a href="###">
+                    <li>我的国美</li>
+                </a>
+                <a href="###">
+                    <li>企业采购</li>
+                </a>
+                <a href="###">
+                    <li>服务中心</li>
+                </a>
+                <a href="###">
+                    <li>网站导航</li>
+                </a>
+                <a href="###">
+                    <li>手机国美</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div id="gm-head" style="background: #fff">
+        <div class="container clearfix">
+            <div id="logo">
+                <a href="../index.html" style="display: inline-block ;width: 300px; height:78px"></a>
+            </div>
+        </div>
+    </div>
+    <section class="cartMain" id="cartMain">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--所有商品全选-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all"></label>
+                    全选
+                </li>
+                <li class="list_con">商品信息</li>
+                <li class="list_info">商品参数</li>
+                <li class="list_price">单价</li>
+                <li class="list_amount">数量</li>
+                <li class="list_sum">金额</li>
+                <li class="list_op">操作</li>
+            </ul>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                    <label for="shop_a" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">搜猎人艺术生活</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_2" class="son_check">
+                        <label for="checkbox_2"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="../images/1.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_3" class="son_check">
+                        <label for="checkbox_3"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="../images/2.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥780</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥780</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_6" class="son_check">
+                        <label for="checkbox_6"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="../images/3.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥180</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥180</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_b" class="shopChoice">
+                    <label for="shop_b" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">卷卷旗舰店</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_4" class="son_check">
+                        <label for="checkbox_4"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="../images/4.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥1980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥1980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_5" class="son_check">
+                        <label for="checkbox_5"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="../images/5.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥480</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥480</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_c" class="shopChoice">
+                    <label for="shop_c" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">卷卷旗舰店</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_8" class="son_check">
+                        <label for="checkbox_8"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="../images/1.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥1980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥1980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_9" class="son_check">
+                        <label for="checkbox_9"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="../images/1.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥480</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥480</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="bar-wrapper" id="bar-wrapper">
+            <div class="bar-right">
+                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                <div class="calBtn"><a href="javascript:;">结算</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="model_bg"></section>
+    <section class="my_model">
+        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;"
+                class="dialog-close">关闭</a></div>
+    </section>
+    <!--    <div id="gm-cart">
+            <div class="container">
+                <div class="delivery clearfix">
+                    <div class="cart-area fr">
+                        <span class="fl">配送至：</span>
+                        <a href="###" class="fr stockaddress">北京市朝阳区建外街道</a>
+                    </div>
+                </div>
+                <div class="cart-main-header">
+                    <div class="cart-col-1">
+                        <input type="checkbox" class="act-check-all-item " />
+                    </div>
+                    <div class="cart-col-2">
+                        全选
+                    </div>
+                    <div class="cart-col-3">
+                        商品信息
+                    </div>
+                    <div class="cart-col-4">
+                        单价
+                    </div>
+                    <div class="cart-col-5">
+                        数量
+                    </div>
+                    <div class="cart-col-6">
+                        小计
+                    </div>
+                    <div class="cart-col-7">
+                        操作
+                    </div>
+                </div>
+                <div id="content">
+        <div class="shopping-goods-box">
+                        <div class="shopping-goods-header">
+                            <div class="cart-col-1">
+                                <div class="shop-col-1">
+                                    <input type="checkbox" class="act-check-shop-item"/>
+                                </div>
+                                <div class="shop-col-2">
+                                    国美自营
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shopping-goods-content">
+                            <div class="content-col-1">
+                                <input class="act-check-item" type="checkbox"/>
+                            </div>
+                            <div class="content-col-2">
+                                <img src="../img/d4s-tu1.jpg" alt="" style="width: 91px;height: 82px;">
+                            </div>
+                            <div class="col3-8 clearfix">
+                                <div class="content-col-3">
+                                    【国美自营】索尼（SONY） ILCE-6000L 微单套机 白色（16-50mm镜头 a6000/α6...
+                                    选购增值服务
+                                </div>
+                                <div class="content-col-8">
+                                    颜色 ：白色
+                                </div>
+                            </div>
+                            <div class="content-col-4">¥ 3569.00</div>
+                            <div class="content-col-5">
+                                <div class="select-buy-box">
+                                    <a href="###" class="selectbtn">-</a>
+                                    <input type="text" value="1" class="selectnum">
+                                    <a href="###" class="selectbtn">+</a>
+                                </div>
+                            </div>
+                            <div class="content-col-6">
+                                ¥ 3569.00
+                            </div>
+                            <div class="content-col-7">
+                                <a href="###" class="goods-remove">删除</a>
+                                <a href="###" class="goods-collect">移入收藏夹</a>
+
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> -->
+    <!-- <div id="cart-bottom">
+            <div class="container">
+                <div class="bottom-col-1">
+                    <input type="checkbox" class="act-check-all2-item " />
+                </div>
+                <div class="bottom-col-2">
+                    全选
+                </div>
+                <div class="bottom-col-3">
+                    <a href="###">删除</a>
+                </div>
+                <div class="bottom-col-4">
+                    已选<span class="cart-num">5</span>件商品
+                </div>
+                <div class="bottom-col-5">
+                    <dl>
+                        <dt>总计（不含运费）：</dt>
+                        <dd>￥18291.90</dd>
+                    </dl>
+                </div>
+                <div class="bottom-col-6">
+                    <a href="###">
+                        去结算&nbsp;&nbsp;>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    <div id="gm-recommend"></div>
+    <div id="gm-footer" class="clearfix">
+        <div class="container clearfix">
+            <div id="gm-link" class="clearfix">
+                <!-- 友情链接 -->
+                <ul class="clearfix link">
+                    <a href="###">
+                        <li>国美集团</li>
+                    </a>
+                    <a href="###">
+                        <li>国美管家</li>
+                    </a>
+                    <a href="###">
+                        <li>关于我们</li>
+                    </a>
+                    <a href="###">
+                        <li>加入我们</li>
+                    </a>
+                </ul>
+                <ul class="clearfix link">
+                    <a href="###">
+                        <li>品牌大全</li>
+                    </a>
+                    <a href="###">
+                        <li>商品专题</li>
+                    </a>
+                    <a href="###">
+                        <li>商品词</li>
+                    </a>
+                    <a href="###">
+                        <li>热词搜索</li>
+                    </a>
+                    <a href="###">
+                        <li>友情链接</li>
+                    </a>
+                    <a href="###">
+                        <li>风险监测</li>
+                    </a>
+                </ul>
+                <ul class="clearfix link">
+                    <a href="###">
+                        <li>销售联盟</li>
+                    </a>
+                    <a href="###">
+                        <li>商家入驻</li>
+                    </a>
+                    <a href="###">
+                        <li>广告营销</li>
+                    </a>
+                </ul>
+            </div>
+            <div id="gm-statement">
+                <!-- 网站声明 -->
+                <p>本公司游戏产品适合18岁以上成年人使用 违法和不良信息举报电话：021-39900132 <a href="###">互联网药品信息服务资格证编号（京）-经营性-2018-0025</a>
+                </p>
+                <p>网络食品销售第三方平台提供者备案：沪网食备A0015号 <a href="###">网络文化经营许可证沪网文[2017]5537-436号</a> <a
+                        href="###">增值电信业务经营许可证</a></p>
+                <p>国美在线电子商务有限公司 办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区 客服电话:4008113333 沪ICP备11009419号</p>
+                <p>北京国美在线电子商务有限公司 办公地址:北京市朝阳区霄云路26号鹏润大厦B座17层 电话:010-59288789 京ICP备 19011786号</p>
+                <p>©2000-2019 国美在线电子商务有限公司版权所有 京公安网备11010502027062 沪B2-20120004号 <a href="###">经营证照</a> <a
+                        href="###">出版经营许可证</a></p>
+            </div>
+            <ul id="gm-report">
+                <div class="gm-reportBox">
+                    <li></li>
+                    <li>
+                        <p>经营性网站</p>
+                        <p>备案信息</p>
+                    </li>
+                </div>
+                <div class="gm-reportBox">
+                    <li></li>
+                    <li>
+                        <p>可信网站</p>
+                        <p>信用评价</p>
+                    </li>
+                </div>
+                <div class="gm-reportBox">
+                    <li></li>
+                    <li>
+                        <p>诚信网站</p>
+                    </li>
+                </div>
+                <div class="gm-reportBox">
+                    <li></li>
+                    <li>
+                        <p>朝阳网络</p>
+                        <p>警察</p>
+                    </li>
+                </div>
+                <div class="gm-reportBox">
+                    <li></li>
+                    <li>
+                        <p>网购大评价</p>
+                    </li>
+                </div>
+                <div class="gm-reportBox">
+                    <li></li>
+                    <li>
+                        <p>上海市信息互联网违法和</p>
+                        <p>不良信息举报中心</p>
+                    </li>
+                </div>
+                <div class="gm-reportBox">
+                    <li></li>
+                    <li>
+                        <p>炎黄鸿志商业信用</p>
+                        <p>认证体系</p>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <!-- </div> -->
+
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script src="../js/carts.js"></script>
+        <script src="../js/cart.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+/* ----------------------注册页模块样式----------------------- */
+#gm-head #logo a {
+    /* logo网站 */
+    background: url(../img/registerlogo.png);
+    background-repeat: no-repeat;
+}
+
+#gm-registerBox {
+    /* 注册盒子 */
+    margin-top: 66px;
+    /* background: red; */
+    position: relative;
+    border: 1px solid #e6e6e6;
+    padding-left: 33px;
+    padding-top: 40px;
+    padding-bottom: 36px;
+    background: url(../img/welfare.png);
+    background-position: 600px -60px;
+    ;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+}
+
+#gm-registerBox .login {
+    font-size: 11px;
+    position: absolute;
+    right: 60px;
+    top: -23px;
+}
+
+#gm-registerBox .type {
+    /* 用户类型列表。下面为内容 */
+    position: absolute;
+    left: 41px;
+    top: -42px;
+}
+
+#gm-registerBox .type .userType {
+    float: left;
+    width: 150px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #5e5e7f;
+    line-height: 40px;
+    height: 40px;
+    margin: 0 1px;
+    border: 1px solid #e6e6e6;
+    background: #f3f3f3;
+    cursor: pointer;
+}
+
+#gm-registerBox .type .active1 {
+    /* 高亮状态 */
+    border-top: 1px #cc0000 solid;
+    border-bottom: 1px #ffffff solid;
+    background: #ffffff;
+    color: #cc0000;
+}
+
+#gm-registerBox .inputBox {
+    margin-bottom: 28px;
+}
+
+/* #gm-registerBox .inputBox:nth-of-type(2) {
+    margin-bottom: 0px;
+} */
+#gm-registerBox .labels {
+    font-size: 14px;
+    color: #888888;
+    vertical-align: middle;
+}
+
+#gm-registerBox .inputBox:nth-of-type(1) .labels {
+    padding-left: 37px;
+}
+
+#gm-registerBox .inputBox:nth-of-type(2) .labels,
+#gm-registerBox .inputBox:nth-of-type(3) .labels,
+#gm-registerBox .inputBox:nth-of-type(4) .labels,
+#gm-registerBox .inputBox:nth-of-type(5) .labels {
+    padding-left: 23px;
+}
+
+#gm-registerBox .inputBox:nth-of-type(6) .labels {
+    padding-left: 9px;
+}
+
+#gm-registerBox .inputBox:nth-last-of-type(1) {
+    padding-left: 93px;
+}
+
+#gm-registerBox .inputs {
+    height: 36px;
+    width: 296px;
+    line-height: 36px;
+    font-size: 14px;
+    border: 1px solid #888888;
+    outline-style: none;
+    vertical-align: middle;
+    text-indent: 3px;
+}
+
+#gm-registerBox .inputBox:nth-of-type(6) .inputs {
+    width: 131px;
+}
+
+/* 表单验证正确的提示 */
+#gm-registerBox .active5 {
+    background: url(../img/correct.png);
+    background-repeat: no-repeat;
+    background-position: 98%, 20%
+}
+
+#gm-registerBox .inputBox:nth-of-type(5) .slideVer {
+    /* 滑动验证 */
+    display: inline-block;
+    vertical-align: middle;
+    width: 296px;
+    height: 37px;
+    background: #eeeeee;
+    position: relative;
+}
+
+#gm-registerBox .inputBox:nth-of-type(5) #slideVer .slideBar {
+    /* 滑动后的背景颜色 */
+    display: inline-block;
+    width: 0px;
+    height: 37px;
+    background: rgb(6, 216, 6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#gm-registerBox .inputBox:nth-of-type(5) .slideVer .slideMove {
+    /* 滑动按钮 */
+    height: 37px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/slidebar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: move;
+    z-index: 3;
+}
+
+#gm-registerBox .inputBox:nth-of-type(5) .slideVer .slideIntro {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 296px;
+    height: 37px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    z-index: 2;
+    color: gray;
+}
+
+#gm-registerBox .inputBox:nth-of-type(6) .getVer {
+    /* 获取短信验证码 */
+    /* width: 104px; */
+    height: 37px;
+    border: 1px solid #888888;
+    text-align: center;
+    line-height: 37px;
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 8px;
+    outline-style: none;
+    cursor: pointer;
+}
+
+#gm-registerBox .inputBox:nth-last-of-type(1) .sub {
+    /* 提交验证 */
+    width: 299px;
+    height: 36px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 36px;
+    background: #ff5757;
+    margin-top: 5px;
+    outline-style: none;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 14px;
+}
+#gm-registerBox .inputBox:nth-last-of-type(1) .sub:hover{
+    background: red;
+}
+#gm-registerBox .company {
+    display: none;
+}
+
+#gm-registerBox #company .img {
+    margin-top: -40px;
+    margin-left: -33px;
+}
+
+#gm-registerBox .powerBox {
+    /* 密码强度盒子 */
+    height: 28px;
+    padding-left: 130px;
+    font-size: 10px;
+    line-height: 28px;
+    display: none;
+}
+
+#gm-registerBox .powerBox .power {
+    /* 强度盒子 */
+    position: relative;
+    background: gray;
+    width: 30px;
+    height: 14px;
+    display: inline-block;
+}
+
+#gm-registerBox .powerBox .power .pow {
+    /* 强度的描述 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: white;
+}
+
+#gm-registerBox .power .active2 {
+    /* 强度条 */
+    display: inline-block;
+    background: brown;
+    width: 0px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: width 0.8s;
+}
+
+/* 滑动提示信息 */
+#gm-registerBox .infor {
+    border: 1px solid #888888;
+    height: 36px;
+    line-height: 36px;
+    font-size: 10px;
+    vertical-align: middle;
+    color: red;
+    padding: 0 3px;
+    display: none;
+}
+
+/* 以下为提示信息 */
+#gm-registerBox .inf {
+    /* 提示信息初始样式：消失 */
+    border: 1px solid #888888;
+    height: 36px;
+    line-height: 36px;
+    font-size: 10px;
+    vertical-align: middle;
+    color: red;
+    padding: 0 3px;
+    display: none;
+    background: #ffffff;
+}
+
+#gm-registerBox .active3 {
+    /* 提示信息样式：显示 */
+    display: inline-block;
+}
+
+#gm-registerBox .active4 {
+    /* 提示信息样式：聚焦的文字颜色 */
+    color: gray;
+    display: inline-block;
+}
+
+/* ---------------------------遮罩层------------------- */
+/* 密码建议遮罩层 */
+#gmBox {
+    position: relative;
+    width: 100%;
+}
+
+#gmBox #pswMask,
+#gmBox #agreementMask {
+    background: rgba(128, 128, 128, 0.35);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    display: none;
+    
+}
+
+#gmBox .pswSug,
+#gmBox .agreement {
+    background: white;
+    padding: 3px 20px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gmBox .pswSug .ti {
+    float: left;
+    color: gray;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#gmBox .pswSug .close {
+    float: right;
+}
+
+#gmBox .pswSug .close:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#gmBox .pswSug .sugtitle {
+    margin-bottom: 20px;
+}
+
+#gmBox .pswSug .sug {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#gmBox .pswSug .str {
+    color: red;
+    margin: 10px 0;
+}
+
+/* 用户须知 */
+#gmBox #agreementMask{
+    display: block;
+}
+#gmBox #agreementMask .agreement{
+    overflow: hidden;
+    width: 850px;
+    padding: 15px 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+#agreementMask .agreement .agreetitle{
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+}
+#agreementMask .agreement .strong{
+    font-weight: bold;
+}
+#agreementMask .agreement .link{
+    font-size: 14px;
+    padding-left: 5px;
+    margin-top: 15px;
+}
+#agreementMask .agreement .link:hover{
+    text-decoration: underline;
+}
+#agreementMask .agreement .agreecontent{
+    text-indent: 24px;
+    height: 60px;
+    overflow-y:auto;
+    border:1px solid gray;
+}
+#agreementMask .agreeBox{
+    text-align: center;
+    margin-top:15px;
+}
+#agreementMask .agreeBox .ag{
+ padding:0 5px;
+ margin:0 15px;
+ line-height: 24px;
+ /* height: 24px; */
+ color:gray;
+ text-align: center;
+ font-size: 14px;
+ display: inline-block;
+ border:1px solid gray;
+ cursor: pointer;
+}
+#agreementMask .agreeBox .ag:nth-child(1):hover{
+background: #5e5e7f48;
+}
+#agreementMask .agreeBox .ag:nth-child(2):hover{
+    background: #f20c59;
+    color: white;
+}
+    
